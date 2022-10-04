@@ -85,11 +85,11 @@ function nhapHangSo() {
 }
 
 function hamBacHai(a, b, c) {
-  let denta = Math.pow(b * b - 4 * a * c);
+  let denta = b*b - 4*a*c;
 
   if (denta > 0) {
-    let x1 = -b + (Math.sqrt(denta) / 2) * a;
-    let x2 = -b - (Math.sqrt(denta) / 2) * a;
+    let x1 = -b + (Math.sqrt(denta) / 2*a);
+    let x2 = -b - (Math.sqrt(denta) / 2*a);
     console.log(`ptrinh co 2 nghiem: x1 = ${x1}, x2 = ${x2}`);
   } else if (denta == 0) {
     let x = (-b / 2) * a;
